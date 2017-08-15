@@ -1,0 +1,16 @@
+{
+  "name": "personal_site",
+  "version": "1.0.0",
+  "description": "chris cao's personal site",
+  "main": "application.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Cao",
+  "license": "ISC",
+  "dependencies": {
+    "iscroll": "^5.2.0",
+    "jquery": "^2.2.4",
+    "jquery-drawer": "^3.2.2"
+  }
+}

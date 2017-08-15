@@ -1,0 +1,24 @@
+h1 {
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    font-size: 4rem; color: #fff;
+    line-height: 1; position: absolute;
+    top: 10px;
+}
+
+#lake-22 {
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)), url('lake_22.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: 100% !important;
+    background-height: 100% !important;
+    background-position: center top !important;
+    padding: 1rem;
+    padding-top: 45%;
+    color: #fff;
+}
+
