@@ -7,9 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>chris cao</title>
 
-        <link rel="stylesheet" href="{{ url_for('static', filename='template.css') }}"
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/template.css') }}">
+
+         <!--Bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+         <!--Bulma -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+
+         <!--animate.css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/animate.min.css') }}">
 
         <!-- drawer.css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
@@ -48,9 +54,8 @@
         {% block content %} {% endblock %}
 
 
-        <script>
-            $(document).ready(function() {
-              $('.drawer').drawer();
-            });
-        </script>
+        <script src="{{ url_for('static', filename='scripts/template.js') }}"></script>
+
+        <!--animate.css jquery extension-->
+        <script src="{{ url_for('static', filename='scripts/jquery.animatecss.js') }}"></script>
     </body>

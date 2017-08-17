@@ -2,7 +2,7 @@
  *  Keyframes
 */
 
-@keyframes fadeIn {
+@keyframes fadein {
     0% {
         opacity: 0;
     }
@@ -25,16 +25,14 @@
 }
 
 /* CSS Page Transitions */
-.m-scene {
-    .scene_element {
-        animation-duration: 0.25s;
-        transition-timing-function: ease-in;
-    }
-    .scene_element--fadeinright {
-        animation-name: fadeInRight;
-    }
+#template {
+    animation-delay: 2s;
 }
 
 /* Styling */
+h1 {
+    animation-name: fadein;
+    animation-duration: 3s;
+}
 
 
