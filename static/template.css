@@ -1,0 +1,16 @@
+#nav-overlay {
+    height: 100%;
+    position: relative;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+/* prevent the linkedin icon from turning blue */
+a, a:visited, a:hover, a:active {
+    color:inherit;
+    text-decoration: none;
+}

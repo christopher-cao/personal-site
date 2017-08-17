@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='year1.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="hero is-primary is-medium">
+    <div class="hero-body m-scene scene_element--fadeinright">
+        <div class="container has-text-centered">
+            <!-- Need to keep container here in order for the Nav Bar to be formatted correctly -->
+            <h1 class="title">Year 1: USC</h1>
+        </div>
+    </div>
+</section>
+{% endblock %}

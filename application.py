@@ -12,7 +12,10 @@ def summary():
 
     return render_template('summary.html')
 
+@app.route('/year1')
+def year1():
 
+    return render_template('year1.html')
 
 
 if __name__ == '__main__':

@@ -1,59 +1,32 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>chris cao</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-        <link rel="stylesheet" href="{{ url_for('static', filename='summary.css') }}">
+{% extends "template.html" %}
 
-        <!-- drawer.css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
-        <!-- jquery & iScroll -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
-        <!-- drawer.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
-    </head>
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='summary.css') }}">
+{% endblock %}
 
-    <body class="drawer drawer--left">
-        <header role="banner">
-            <button type="button" class="drawer-toggle drawer-hamburger">
-                <span class="sr-only">toggle navigation</span>
-                <span class="drawer-hamburger-icon"></span>
-            </button>
-            <nav class="drawer-nav" role="navigation">
-                <ul class="drawer-menu">
-                    <li><a class="drawer-brand" href="#">Brand</a></li>
-                    <li><a class="drawer-menu-item" href="#">Nav1</a></li>
-                    <li><a class="drawer-menu-item" href="#">Nav2</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="hero">
-            <div class="container" id="main-content">
-                <div class="hero-body" >
-                    <figure>
-                        <img id="headshot" src="{{ url_for('static', filename='images/headshot_cropped.jpg') }}">
-                    </figure>
-                      <h1 class="title">
-                        hi, i'm chris
-                      </h1>
-                      <p class="subtitle" id="tagline">
-                        student ● self-taught developer ● traveler
-                      </p>
-                      <p>
-                          current location: seattle, wa
-                      </p>
-                </div>
-            </div>
-        </section>
+{% block content %}
+<!-- Hero class comes from Bulma, used for centering vertically -->
+<section class="hero">
+    <div class="container" id="main-content">
+        <div class="hero-body" >
+            <figure>
+            <img id="headshot" src="{{ url_for('static', filename='images/headshot_cropped.jpg') }}">
+            </figure>
+            <h1 class="title">
+                hi, i'm chris
+            </h1>
+            <p class="subtitle" id="tagline">
+                student ● self-taught developer ● traveler
+            </p>
+            <p>
+                Originally from Tampa, Florida, I am one of 45 students in the second class of the World Bachelor in Business, a triple degree program jointly organized by the University of Southern California, the Hong Kong University of Science and Technology, and Bocconi University.
+                This fall, I will begin completing my final year of the program at the University of Southern California.
+            </p>
+            <span class="icon">
+                <a href="/year1"><i class="fa fa-arrow-right"></i></a>
+            </span>
 
-        <script>
-            $(document).ready(function() {
-              $('.drawer').drawer();
-            });
-        </script>
-    </body>
-</html>
+        </div>
+    </div>
+</section>
+{% endblock %}
