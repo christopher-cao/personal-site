@@ -10,9 +10,10 @@
 <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
 <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
 
+<!--summary.js-->
 <script src="{{ url_for('static', filename='scripts/summary.js') }}"></script>
-
 {% endblock %}
+
 
 {% block content %}
 <!-- Hero class comes from Bulma, used for centering vertically -->
@@ -25,17 +26,103 @@
             <h1 class="title">
                 hi, i'm chris
             </h1>
-
             <p class="subtitle" id="tagline">
-                student ● self-taught developer ● traveler
+                wbb student ● self-taught developer
             </p>
-
-            </section>
         </div>
     </div>
 </section>
+
+<!--MAP SECTION-->
 <section class="hero is-medium has-text-centered">
     <div class="container is-fluid" id="chartdiv"></div>
 </section>
 
+<!--MODALS-->
+<!--LA Modal-->
+<div class="modal" id="la">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Modal title</p>
+      <button class="delete close-modal" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button close-modal">Cancel</button>
+    </footer>
+  </div>
+</div>
+
+<!--HK Modal-->
+<div class="modal" id="hk">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Modal title</p>
+      <button class="delete close-modal" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button close-modal">Cancel</button>
+    </footer>
+  </div>
+</div>
+
+<!--BKK Modal -->
+<div class="modal" id="bkk">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Modal title</p>
+      <button class="delete close-modal" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button close-modal">Cancel</button>
+    </footer>
+  </div>
+</div>
+
+<!--Milan Modal -->
+<div class="modal" id="milan">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Modal title</p>
+      <button class="delete close-modal" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button close-modal">Cancel</button>
+    </footer>
+  </div>
+</div>
+
+<!--Seattle Modal-->
+<div class="modal" id="seattle">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Modal title</p>
+      <button class="delete close-modal" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button close-modal">Cancel</button>
+    </footer>
+  </div>
+</div>
+
 {% endblock %}
+
