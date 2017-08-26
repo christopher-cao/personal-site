@@ -2,6 +2,16 @@
 
 {% block head %}
 <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/summary.css') }}">
+
+<!--Map Resources-->
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+<script src="{{ url_for('static', filename='scripts/summary.js') }}"></script>
+
 {% endblock %}
 
 {% block content %}
@@ -9,29 +19,23 @@
 <section class="hero">
     <div class="container" id="main-content">
         <div class="hero-body" >
-            <section id="show-first">
-                <figure>
-                <img id="headshot" src="{{ url_for('static', filename='images/headshot_cropped.jpg') }}">
-                </figure>
-                <h1 class="title">
-                    hi, i'm chris
-                </h1>
-            </section>
+            <figure>
+            <img id="headshot" src="{{ url_for('static', filename='images/headshot_cropped.jpg') }}">
+            </figure>
+            <h1 class="title">
+                hi, i'm chris
+            </h1>
 
-            <section id="show-second">
             <p class="subtitle" id="tagline">
                 student ● self-taught developer ● traveler
             </p>
-            <p>
-                Originally from Tampa, Florida, I am one of 45 students in the second class of the World Bachelor in Business, a triple degree program jointly organized by the University of Southern California, the Hong Kong University of Science and Technology, and Bocconi University.
-                This fall, I will begin completing my final year of the program at the University of Southern California.
-            </p>
-            </section>
-            <span class="icon">
-                <a href="/year1"><i class="fa fa-arrow-right"></i></a>
-            </span>
 
+            </section>
         </div>
     </div>
 </section>
+<section class="hero is-medium has-text-centered">
+    <div class="container is-fluid" id="chartdiv"></div>
+</section>
+
 {% endblock %}

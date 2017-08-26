@@ -5,7 +5,7 @@
 }
 
 #main-content { /* just centering the main content */
-    position: absolute;
+
     margin: auto;
     top: 0;
     right: 0;
@@ -15,14 +15,8 @@
     width: 700px;
     text-align: center;
 
-    /*-webkit-animation: fadein 2s;*/
 }
 
-/*
-.drawer {
-    -webkit-animation: fadein 2s;
-}
-*/
 #test {
     height: 100%;
     position: relative;
@@ -42,10 +36,14 @@
     animation-name: fadein;
     animation-duration: 2s;
     animation-delay: 1s;
+    animation-fill-mode: backwards;
 }
 
 #show-second.animated {
     text-color: red;
 }
 
-
+#chartdiv {
+	height: 500px;
+	position: relative;
+}

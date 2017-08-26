@@ -1,0 +1,4 @@
+Libraries Used
+- Jquery
+- Bulma (CSS framework)
+-

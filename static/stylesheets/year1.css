@@ -25,14 +25,16 @@
 }
 
 /* CSS Page Transitions */
-#template {
-    animation-delay: 2s;
-}
 
 /* Styling */
 h1 {
     animation-name: fadein;
     animation-duration: 3s;
+}
+
+.hero {
+    background-image: url('../images/aerial_view_HKUST.jpg');
+    background-size: contain;
 }
 
 

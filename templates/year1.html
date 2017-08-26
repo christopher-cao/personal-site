@@ -1,12 +1,13 @@
 {% extends "template.html" %}
 
 {% block head %}
+<!--CSS file-->
 <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/year1.css') }}">
 {% endblock %}
 
 {% block content %}
  <!--Need to put animations on the SECTION -->
-<section class="hero is-primary is-medium animated" id="test">
+<section class="hero is-medium animated" id="barba-wrapper">
     <div class="hero-body ">
         <div class="container has-text-centered">
             <!-- Need to keep container here in order for the Nav Bar to be formatted correctly -->
@@ -15,5 +16,6 @@
     </div>
 </section>
 
+<!--Javascript file-->
 <script src="{{ url_for('static', filename='scripts/year1.js') }}"></script>
 {% endblock %}

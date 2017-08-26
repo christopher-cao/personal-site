@@ -1,4 +1,5 @@
 $(document).ready(function() {
     $('#test').hide();
-    $('#test').animateCSS("fadeIn", {delay: 500});
-});
+    $('#test').animateCSS("fadeInRight", {delay: 500})
+    });
+}
