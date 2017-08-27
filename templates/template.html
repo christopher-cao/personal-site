@@ -25,6 +25,8 @@
         <!-- drawer.js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 
+        <!--parallax.js for parallax scrolling-->
+        <script src="{{ url_for('static', filename='scripts/parallax.min.js') }}"></script>
         <!--font awesome-->
         <script src="https://use.fontawesome.com/f1b2e621fb.js"></script>
         {% block head %}{% endblock %}
@@ -42,20 +44,21 @@
                         <li><a class="drawer-brand" href="/summary">Chris Cao</a></li>
                         <li><a class="drawer-menu-item">About Me</a></li>
 
-                        <li><a class="drawer-menu-item" href="#">Year 1: University of Southern California</a></li>
-                        <li><a class="drawer-menu-item" href="#">Year 2: Hong Kong University of Science and Technology</a></li>
+                        <!--<li><a class="drawer-menu-item" href="#">Year 1: University of Southern California</a></li>-->
+                        <!--<li><a class="drawer-menu-item" href="#">Year 2: Hong Kong University of Science and Technology</a></li>-->
                     </ul>
-
-                    <span class="icon is-medium bottom">
-                        <a target="_blank" href="https://www.linkedin.com/in/christopher-cao/"><i class="fa fa-linkedin"></i></a>
-                    </span>
                 </div>
             </nav>
         </header>
 
         {% block content %} {% endblock %}
-
-
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <p>Christopher Cao</p>
+                </div>
+            </div>
+        </footer>
         <script src="{{ url_for('static', filename='scripts/template.js') }}"></script>
 
         <!--animate.css jquery extension-->

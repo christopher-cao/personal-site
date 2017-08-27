@@ -15,12 +15,13 @@ function clickIcon(event){
     console.log("you clicked an icon");
     var location = event.mapObject.title;
     console.log(location);
-    $('#' + location).addClass("is-active");
+//    $('#' + location).addClass("is-active");
+    $('.cover-img').hide();
+    $('.location-description').hide();
+//    $('#cover-' + location).show();
+    $('.' + location).show();
 }
 
-//function openModal(){
-//
-//}
 
 /**
  * Create the map
@@ -120,9 +121,15 @@ var map = AmCharts.makeChart( "chartdiv", {
 
 // Other listeners
 $(document).ready(function() {
-
     // Closing the modals
     $('.close-modal').click(function() {
         $(".modal").removeClass("is-active");
     });
+
+    $('.hk').hide();
+    $('.bkk').hide();
+    $('.milan').hide();
+    $('.seattle').hide();
+
 });
+

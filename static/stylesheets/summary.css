@@ -43,8 +43,20 @@
     text-color: red;
 }
 
+/* Actual styling */
+
 #chartdiv {
 	height: 500px;
 	position: relative;
 }
 
+#cover-hk {
+    background-image: url('../images/aerial_view_HKUST.jpg');
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+.card {
+    width: 50%;
+    margin: 0 auto;
+}
