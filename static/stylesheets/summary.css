@@ -50,10 +50,32 @@
 	position: relative;
 }
 
+.cover-img {
+    height: 900px;
+}
+
+#cover-la {
+    background-image: url('../images/downtown-la.jpg');
+}
+
 #cover-hk {
     background-image: url('../images/aerial_view_HKUST.jpg');
     background-size: cover;
     background-position-y: 60%;
+}
+
+#cover-bkk {
+    background-image: url('../images/bangkok.jpg');
+}
+
+#cover-milan {
+    background-image: url('../images/milan-duomo.jpg');
+    background-position-x: 50%;
+    background-position-y: 40%;
+}
+
+#cover-seattle {
+    background-image: url('../images/seattle-skyline.jpg');
 }
 
 .card {

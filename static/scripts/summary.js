@@ -57,35 +57,45 @@ var map = AmCharts.makeChart( "chartdiv", {
       "latitude": 45,
       "longitude": 9,
       "scale": 3,
-      "selectable": true
+      "selectable": true,
+      "label": "4. Milan",
+      "balloonText": "Year 3: Milan"
     }, {
       "svgPath": hkSVG,
       "title": "hk",
       "latitude": 22,
       "longitude": 114,
       "scale": 3,
-      "selectable": true
+      "selectable": true,
+      "label": "2. Hong Kong",
+      "balloonText": "Year 2: Hong Kong"
     }, {
       "svgPath": laSVG,
       "title": "la",
       "latitude": 34.3,
       "longitude": -118.15,
       "scale": 3,
-      "selectable": true
+      "selectable": true,
+      "label": "1. Los Angeles",
+      "balloonText": "Year 1: Los Angeles"
     }, {
       "svgPath": bkkSVG,
       "title": "bkk",
       "latitude": 13,
       "longitude": 100,
       "scale": 3,
-      "selectable": true
+      "selectable": true,
+      "label": "3. Bangkok",
+      "balloonText": "Summer 2016: Bangkok"
     }, {
       "svgPath": seattleSVG,
       "title": "seattle",
       "latitude": 47,
       "longitude": -122,
       "scale": 3,
-      "selectable": true
+      "selectable": true,
+      "label": "5. Seattle",
+      "balloonText": "Summer 2017: Seattle"
     }, {
       "svgPath": planeSVG,
       "positionOnLine": 0,
